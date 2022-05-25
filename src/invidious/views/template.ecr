@@ -12,7 +12,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg?v=<%= ASSET_COMMIT %>" color="#575757">
     <meta name="msapplication-TileColor" content="#575757">
     <meta name="theme-color" content="#575757">
-    <link title="Invidious" type="application/opensearchdescription+xml" rel="search" href="/opensearch.xml">
+    <link title="AlternaTube" type="application/opensearchdescription+xml" rel="search" href="/opensearch.xml">
     <link rel="stylesheet" href="/css/pure-min.css?v=<%= ASSET_COMMIT %>">
     <link rel="stylesheet" href="/css/grids-responsive-min.css?v=<%= ASSET_COMMIT %>">
     <link rel="stylesheet" href="/css/ionicons.min.css?v=<%= ASSET_COMMIT %>">
@@ -32,7 +32,7 @@
             <div class="pure-g navbar h-box">
                 <% if navbar_search %>
                     <div class="pure-u-1 pure-u-md-4-24">
-                        <a href="/" class="index-link pure-menu-heading">Invidious</a>
+                        <a href="/" class="index-link pure-menu-heading">AlternaTube</a>
                     </div>
                     <div class="pure-u-1 pure-u-md-12-24 searchbar">
                         <% autofocus = false %><%= rendered "components/search_box" %>
@@ -52,7 +52,7 @@
                         </div>
                         <div class="pure-u-1-4">
                             <a id="notification_ticker" title="<%= translate(locale, "Subscriptions") %>" href="/feed/subscriptions" class="pure-menu-heading">
-                                <% notification_count = env.get("user").as(Invidious::User).notifications.size %>
+                                <% notification_count = env.get("user").as(AlternaTube::User).notifications.size %>
                                 <% if notification_count > 0 %>
                                     <span id="notification_count"><%= notification_count %></span> <i class="icon ion-ios-notifications"></i>
                                 <% else %>
@@ -67,7 +67,7 @@
                         </div>
                         <% if env.get("preferences").as(Preferences).show_nick %>
                             <div class="pure-u-1-4">
-                                <span id="user_name"><%= env.get("user").as(Invidious::User).email %></span>
+                                <span id="user_name"><%= env.get("user").as(AlternaTube::User).email %></span>
                             </div>
                         <% end %>
                         <div class="pure-u-1-4">
@@ -111,50 +111,7 @@
             <% end %>
 
             <%= content %>
-
-            <footer>
-                <div class="pure-g">
-                    <div class="pure-u-1 pure-u-md-1-3">
-                        <span>
-                            <i class="icon ion-logo-github"></i>
-                        <% if CONFIG.modified_source_code_url %>
-                            <a href="https://facebook.com"><%= translate(locale, "footer_original_source_code") %></a>&nbsp;/
-                            <a href="<%= CONFIG.modified_source_code_url %>"><%= translate(locale, "footer_modfied_source_code") %></a>
-                        <% else %>
-                            <a href="https://facebook.com"><%= translate(locale, "footer_source_code") %></a>
-                        <% end %>
-                        </span>
-                        <span>
-                            <i class="icon ion-ios-paper"></i>
-                            <a href="https://facebook.com"><%= translate(locale, "footer_documentation") %></a>
-                        </span>
-                    </div>
-
-                    <div class="pure-u-1 pure-u-md-1-3">
-                        <span>
-                            <a href="https://github.com/iv-org/invidious/blob/master/LICENSE"><%= translate(locale, "HOŞGELDİN") %></a>
-                        </span>
-                        <span>
-                            <i class="icon ion-logo-javascript"></i>
-                            <a rel="jslicense" href="/licenses"><%= translate(locale, "View JavaScript license information.") %></a>
-                        </span>
-                        <span>
-                            <i class="icon ion-ios-paper"></i>
-                            <a href="/privacy"><%= translate(locale, "View privacy policy.") %></a>
-                        </span>
-                    </div>
-
-                    <div class="pure-u-1 pure-u-md-1-3">
-                        <span>
-                            <i class="icon ion-ios-wallet"></i>
-                            <a href="https://invidious.io/donate/"><%= translate(locale, "footer_donate_page") %></a>
-                        </span>
-                        <span><%= translate(locale, "Current version: ") %> <%= CURRENT_VERSION %>-<%= CURRENT_COMMIT %> @ <%= CURRENT_BRANCH %></span>
-                    </div>
-                </div>
-            </footer>
-
-        </div>
+   </div>
         <div class="pure-u-1 pure-u-md-2-24"></div>
     </div>
     <script src="/js/handlers.js?v=<%= ASSET_COMMIT %>"></script>

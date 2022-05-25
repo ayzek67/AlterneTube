@@ -7,7 +7,7 @@
 <meta name="thumbnail" content="<%= thumbnail %>">
 <meta name="description" content="<%= HTML.escape(video.short_description) %>">
 <meta name="keywords" content="<%= video.keywords.join(",") %>">
-<meta property="og:site_name" content="Invidious">
+<meta property="og:site_name" content="AlternaTube">
 <meta property="og:url" content="<%= HOST_URL %>/watch?v=<%= video.id %>">
 <meta property="og:title" content="<%= title %>">
 <meta property="og:image" content="/vi/<%= video.id %>/maxres.jpg">
@@ -29,7 +29,7 @@
 <meta name="twitter:player:height" content="720">
 <link rel="alternate" href="https://www.youtube.com/watch?v=<%= video.id %>">
 <%= rendered "components/player_sources" %>
-<title><%= title %> - Invidious</title>
+<title><%= title %> - AlternaTube</title>
 
 <!-- Description expansion also updates the 'Show more' button to 'Show less' so
 we're going to need to do it here in order to allow for translations.
@@ -112,18 +112,7 @@ we're going to need to do it here in order to allow for translations.
 <div class="pure-g">
     <div class="pure-u-1 pure-u-lg-1-5">
         <div class="h-box">
-            <span id="watch-on-youtube">
-                <a href="https://www.youtube.com/watch?v=<%= video.id %>"><%= translate(locale, "videoinfo_watch_on_youTube") %></a>
-                (<a href="https://www.youtube.com/embed/<%= video.id %>"><%= translate(locale, "videoinfo_youTube_embed_link") %></a>)
-            </span>
-            <p id="watch-on-another-invidious-instance">
-            <% if env.get("preferences").as(Preferences).automatic_instance_redirect%>
-                <a href="/redirect?referer=<%= env.get?("current_page") %>"><%= translate(locale, "Switch Invidious Instance") %></a>
-            <% else %>
-                <a href="https://redirect.invidious.io<%= env.request.resource %>"><%= translate(locale, "Switch Invidious Instance") %></a>
-            <% end %>
-            </p>
-            <p id="embed-link">
+              <p id="embed-link">
                 <a href="<%= embed_link %>"><%= translate(locale, "videoinfo_invidious_embed_link") %></a>
             </p>
             <p id="annotations">
@@ -132,9 +121,7 @@ we're going to need to do it here in order to allow for translations.
                         <%= translate(locale, "Hide annotations") %>
                     </a>
                 <% else %>
-                    <a href="/watch?<%= env.params.query %>&iv_load_policy=1">
-                        <%=translate(locale, "Show annotations")%>
-                    </a>
+                    
                 <% end %>
             </p>
 
@@ -172,23 +159,11 @@ we're going to need to do it here in order to allow for translations.
             <%= Invidious::Frontend::WatchPage.download_widget(locale, video, video_assets) %>
 
             <p id="views"><i class="icon ion-ios-eye"></i> <%= number_with_separator(video.views) %></p>
-            <p id="likes"><i class="icon ion-ios-thumbs-up"></i> <%= number_with_separator(video.likes) %></p>
-            <p id="dislikes"><i class="icon ion-ios-thumbs-down"></i> <%= number_with_separator(video.dislikes) %></p>
-            <p id="genre"><%= translate(locale, "Genre: ") %>
-                <% if !video.genre_url %>
-                    <%= video.genre %>
-                <% else %>
-                    <a href="<%= video.genre_url %>"><%= video.genre %></a>
-                <% end %>
-            </p>
-            <% if video.license %>
+           <% if video.license %>
                 <p id="license"><%= translate(locale, "License: ") %><%= video.license %></p>
             <% end %>
             <p id="family_friendly"><%= translate(locale, "Family friendly? ") %><%= translate_bool(locale, video.is_family_friendly) %></p>
-            <p id="wilson"><%= translate(locale, "Wilson score: ") %><%= video.wilson_score %></p>
-            <p id="rating"><%= translate(locale, "Rating: ") %><%= video.average_rating %> / 5</p>
-            <p id="engagement"><%= translate(locale, "Engagement: ") %><%= video.engagement %>%</p>
-            <% if video.allowed_regions.size != REGIONS.size %>
+           <% if video.allowed_regions.size != REGIONS.size %>
                 <p id="allowed_regions">
                     <% if video.allowed_regions.size < REGIONS.size // 2 %>
                         <%= translate(locale, "Whitelisted regions: ") %><%= video.allowed_regions.join(", ") %>
@@ -199,7 +174,6 @@ we're going to need to do it here in order to allow for translations.
             <% end %>
         </div>
     </div>
-
     <div class="pure-u-1 <% if params.related_videos || plid %>pure-u-lg-3-5<% else %>pure-u-md-4-5<% end %>">
         <div class="h-box">
             <a href="/channel/<%= video.ucid %>" style="display:block;width:fit-content;width:-moz-fit-content">

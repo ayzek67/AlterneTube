@@ -2,14 +2,14 @@
 <% author = HTML.escape(playlist.author) %>
 
 <% content_for "header" do %>
-<title><%= title %> - Invidious</title>
+<title><%= title %> - AlternaTube</title>
 <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed/playlist/<%= plid %>" />
 <% end %>
 
 <div class="pure-g h-box">
     <div class="pure-u-2-3">
         <h3><%= title %></h3>
-        <% if playlist.is_a? InvidiousPlaylist %>
+        <% if playlist.is_a? AlternaTubePlaylist %>
             <b>
                 <% if playlist.author == user.try &.email %>
                 <a href="/feed/playlists"><%= author %></a> |
