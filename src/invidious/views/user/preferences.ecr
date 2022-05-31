@@ -1,5 +1,5 @@
 <% content_for "header" do %>
-<title><%= translate(locale, "Preferences") %> - Invidious</title>
+<title><%= translate(locale, "Preferences") %> - AlternaTube</title>
 <% end %>
 
 <div class="h-box">
@@ -144,7 +144,7 @@
             <div class="pure-control-group">
                 <label for="player_style"><%= translate(locale, "preferences_player_style_label") %></label>
                 <select name="player_style" id="player_style">
-                    <% {"invidious", "youtube"}.each do |option| %>
+                    <% {"AlternaTube", "youtube"}.each do |option| %>
                         <option value="<%= option %>" <% if preferences.player_style == option %> selected <% end %>><%= translate(locale, option) %></option>
                     <% end %>
                 </select>
