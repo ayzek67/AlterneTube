@@ -75,7 +75,7 @@
     "light": "claro",
     "preferences_thin_mode_label": "Modo compacto: ",
     "preferences_category_misc": "Preferências diversas",
-    "preferences_automatic_instance_redirect_label": "Redirecionamento de instância automática (fallback para redirect.invidious.io): ",
+    "preferences_automatic_instance_redirect_label": "Redirecionamento de instância automática : ",
     "preferences_category_subscription": "Preferências de inscrições",
     "preferences_annotations_subscribed_label": "Sempre mostrar anotações dos vídeos de canais inscritos: ",
     "Redirect homepage to feed: ": "Redirecionar página inicial para o feed: ",

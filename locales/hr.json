@@ -75,7 +75,7 @@
     "light": "svijetlo",
     "preferences_thin_mode_label": "Pojednostavljen prikaz: ",
     "preferences_category_misc": "Razne postavke",
-    "preferences_automatic_instance_redirect_label": "Automatsko preusmjeravanje instance (u krajnjem slučaju će se koristiti redirect.invidious.io): ",
+    "preferences_automatic_instance_redirect_label": "Automatsko preusmjeravanje instance : ",
     "preferences_category_subscription": "Postavke pretplata",
     "preferences_annotations_subscribed_label": "Standardno prikaži napomene za pretplaćene kanale: ",
     "Redirect homepage to feed: ": "Preusmjeri početnu stranicu na feed: ",

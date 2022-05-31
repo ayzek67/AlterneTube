@@ -159,7 +159,7 @@
     "light": "svetlo",
     "preferences_thin_mode_label": "Kompaktni režim: ",
     "preferences_category_misc": "Ostala podešavanja",
-    "preferences_automatic_instance_redirect_label": "Automatsko prebacivanje na drugu instancu u slučaju otkazivanja (preči će nazad na redirect.invidious.io): ",
+    "preferences_automatic_instance_redirect_label": "Automatsko prebacivanje na drugu instancu u slučaju otkazivanja : ",
     "alphabetically - reverse": "po alfabetu - obrnuto",
     "Enable web notifications": "Omogući obaveštenja u veb pretraživaču",
     "`x` is live": "`x` prenosi uživo",

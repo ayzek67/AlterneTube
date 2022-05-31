@@ -75,7 +75,7 @@
     "light": "aydınlık",
     "preferences_thin_mode_label": "İnce mod: ",
     "preferences_category_misc": "Çeşitli tercihler",
-    "preferences_automatic_instance_redirect_label": "Otomatik örnek yeniden yönlendirmesi (yedek: redirect.invidious.io): ",
+    "preferences_automatic_instance_redirect_label": "Otomatik örnek yeniden yönlendirmesi : ",
     "preferences_category_subscription": "Abonelik tercihleri",
     "preferences_annotations_subscribed_label": "Abone olunan kanallar için ek açıklamaları öntanımlı olarak göster: ",
     "Redirect homepage to feed: ": "Ana sayfayı akışa yönlendir: ",

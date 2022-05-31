@@ -80,7 +80,7 @@
     "light": "روشن",
     "preferences_thin_mode_label": "حالت نازک: ",
     "preferences_category_misc": "ترجیحات متفرقه",
-    "preferences_automatic_instance_redirect_label": "هدایت خودکار نمونه (به طور پیش‌فرض به redirect.invidious.io): ",
+    "preferences_automatic_instance_redirect_label": "هدایت خودکار نمونه : ",
     "preferences_category_subscription": "ترجیحات اشتراک",
     "preferences_annotations_subscribed_label": "نمایش حاشیه نویسی ها به طور پیشفرض برای کانال های مشترک شده: ",
     "Redirect homepage to feed: ": "تغییر مسیر صفحه خانه به خوراک: ",

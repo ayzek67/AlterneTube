@@ -405,7 +405,7 @@
     "videoinfo_started_streaming_x_ago": "Ha iniziato a trasmettere `x` fa",
     "download_subtitles": "Sottotitoli - `x` (.vtt)",
     "user_saved_playlists": "playlist salvate da `x`",
-    "preferences_automatic_instance_redirect_label": "Reindirizzamento automatico dell'istanza (ripiego su redirect.invidious.io): ",
+    "preferences_automatic_instance_redirect_label": "Reindirizzamento automatico dell'istanza : ",
     "Video unavailable": "Video non disponibile",
     "preferences_show_nick_label": "Mostra nickname in alto: ",
     "videoinfo_youTube_embed_link": "Incorpora",

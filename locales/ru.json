@@ -75,7 +75,7 @@
     "light": "светлая",
     "preferences_thin_mode_label": "Облегчённое оформление: ",
     "preferences_category_misc": "Прочие настройки",
-    "preferences_automatic_instance_redirect_label": "Автоматическое перенаправление на зеркало сайта (переход на redirect.invidious.io): ",
+    "preferences_automatic_instance_redirect_label": "Автоматическое перенаправление на зеркало сайта : ",
     "preferences_category_subscription": "Настройки подписок",
     "preferences_annotations_subscribed_label": "Всегда показывать аннотации в видео каналов, на которые вы подписаны? ",
     "Redirect homepage to feed: ": "Отображать видео с каналов, на которые вы подписаны, как главную страницу: ",

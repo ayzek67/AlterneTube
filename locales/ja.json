@@ -80,7 +80,7 @@
     "light": "ライト",
     "preferences_thin_mode_label": "最小モード: ",
     "preferences_category_misc": "雑設定",
-    "preferences_automatic_instance_redirect_label": "自動的なインスタンスの移転（redirect.invidious.ioにフォールバック）： ",
+    "preferences_automatic_instance_redirect_label": "自動的なインスタンスの移転（にフォールバック）： ",
     "preferences_category_subscription": "登録チャンネル設定",
     "preferences_annotations_subscribed_label": "デフォルトで登録チャンネルのアノテーションを表示しますか？ ",
     "Redirect homepage to feed: ": "ホームからフィードにリダイレクト: ",

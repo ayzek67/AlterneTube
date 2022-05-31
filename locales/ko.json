@@ -4,7 +4,7 @@
     "Redirect homepage to feed: ": "피드로 홈페이지 리디렉션: ",
     "preferences_annotations_subscribed_label": "구독한 채널에 기본적으로 특수효과를 표시하시겠습니까? ",
     "preferences_category_subscription": "구독 설정",
-    "preferences_automatic_instance_redirect_label": "자동 인스턴스 리디렉션 (redirect.invidious.io로 대체): ",
+    "preferences_automatic_instance_redirect_label": "자동 인스턴스 리디렉션 (로 대체): ",
     "preferences_thin_mode_label": "단순 모드: ",
     "light": "라이트",
     "dark": "다크",

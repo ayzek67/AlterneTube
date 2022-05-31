@@ -426,7 +426,7 @@
     "Could not pull trending pages.": "Nepodařilo se získat trendy stránky.",
     "Erroneous CAPTCHA": "Chybná CAPTCHA",
     "Password is a required field": "Heslo je vyžadované pole",
-    "preferences_automatic_instance_redirect_label": "Automatické přesměrování instance (fallback na redirect.invidious.io): ",
+    "preferences_automatic_instance_redirect_label": "Automatické přesměrování instance: ",
     "Switch Invidious Instance": "Přepnout instanci Invidious",
     "Empty playlist": "Prázdný playlist",
     "footer_source_code": "Zdrojový kód",
