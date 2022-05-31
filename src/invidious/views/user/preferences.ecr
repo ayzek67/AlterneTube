@@ -1,5 +1,5 @@
 <% content_for "header" do %>
-<title><%= translate(locale, "Preferences") %> - AlternaTube</title>
+<title><%= translate(locale, "Preferences") %> - Invidious</title>
 <% end %>
 
 <div class="h-box">
@@ -144,7 +144,7 @@
             <div class="pure-control-group">
                 <label for="player_style"><%= translate(locale, "preferences_player_style_label") %></label>
                 <select name="player_style" id="player_style">
-                    <% {"AlternaTube", "youtube"}.each do |option| %>
+                    <% {"invidious", "youtube"}.each do |option| %>
                         <option value="<%= option %>" <% if preferences.player_style == option %> selected <% end %>><%= translate(locale, option) %></option>
                     <% end %>
                 </select>
@@ -165,9 +165,9 @@
             </div>
 
             <% if env.get?("user") %>
-                <% feed_options = {"", "Trending", "Popular", "Subscriptions", "Playlists"} %>
+                <% feed_options = {"", "Popular", "Trending", "Subscriptions", "Playlists"} %>
             <% else %>
-                <% feed_options = {"", "Trending", "Popular"} %>
+                <% feed_options = {"", "Popular", "Trending"} %>
             <% end %>
 
             <div class="pure-control-group">
@@ -198,7 +198,7 @@
 
             <legend><%= translate(locale, "preferences_category_misc") %></legend>
 
-           <div class="pure-control-group">
+            <div class="pure-control-group">
                 <label for="automatic_instance_redirect"><%= translate(locale, "preferences_automatic_instance_redirect_label") %></label>
                 <input name="automatic_instance_redirect" id="automatic_instance_redirect" type="checkbox" <% if preferences.automatic_instance_redirect %>checked<% end %>>
             </div>
